@@ -12,7 +12,7 @@ const statusRoutes = require('./routes/statusRoute');
 
 const app = express();
 const server = http.createServer(app);
-const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+const frontendUrl = process.env.FRONTEND_URL || 'https://whatsappswebside-backendf.onrender.com';
 
 app.use(cors({ origin: frontendUrl, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
